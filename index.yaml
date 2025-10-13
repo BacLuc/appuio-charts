@@ -1,0 +1,322 @@
+apiVersion: v1
+entries:
+  cloud-portal:
+  - apiVersion: v2
+    appVersion: v0.2.1
+    created: "2025-10-13T06:28:11.835589101Z"
+    description: APPUiO Cloud Portal (Web Frontend)
+    digest: d93183d017d9052387775020f0f10964ee800def688e359515116112a8e14468
+    home: https://appuio.cloud
+    icon: https://docs.appuio.cloud/user/_images/appuio.svg
+    keywords:
+    - appuio
+    - openshift
+    name: cloud-portal
+    sources:
+    - https://github.com/appuio/cloud-portal
+    type: application
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/cloud-portal-0.4.1/cloud-portal-0.4.1.tgz
+    version: 0.4.1
+  data-cube-curation:
+  - apiVersion: v1
+    appVersion: 0.6.1
+    created: "2025-10-13T06:28:11.971957419Z"
+    description: RDF Data Cube curation service
+    digest: 4f06e262bbea6813e7c5047695520fd8e1911961657cc94936bebd786a4712bc
+    home: https://github.com/zazuko/data-cube-curation
+    name: data-cube-curation
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/data-cube-curation-0.3.1/data-cube-curation-0.3.1.tgz
+    version: 0.3.1
+  exoip:
+  - apiVersion: v1
+    appVersion: v0.4.3
+    created: "2025-10-13T06:28:12.145839512Z"
+    description: Deploy exoip as a DaemonSet
+    digest: 4e2aec5a77dfa27058542958f47bb5c1416f844514b2294aa2c8a23b42ed5a57
+    maintainers:
+    - email: info@appuio.ch
+      name: APPUiO Team
+    name: exoip
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/exoip-1.0.4/exoip-1.0.4.tgz
+    version: 1.0.4
+  generic:
+  - apiVersion: v1
+    created: "2025-10-13T06:28:12.291799986Z"
+    description: A Helm chart to create generic Kubernetes resources
+    digest: fde796f8da7fb1e4463510d65454f47befd7680a2f474d1dd430169609c2601f
+    icon: https://kubernetes.io/images/wheel.svg
+    maintainers:
+    - email: info@appuio.ch
+      name: APPUiO Team
+    name: generic
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/generic-0.1.2/generic-0.1.2.tgz
+    version: 0.1.2
+  haproxy:
+  - apiVersion: v1
+    appVersion: 2.7.3
+    created: "2025-10-13T06:28:12.462864184Z"
+    description: A Helm chart for HAProxy which can be customized by a config map.
+    digest: 2c620bc58fef444edef19ed3ddab9fc1aeea568bd61fedb4fe2a15d2d894a4ec
+    maintainers:
+    - email: info@appuio.ch
+      name: APPUiO Team
+    name: haproxy
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/haproxy-2.7.2/haproxy-2.7.2.tgz
+    version: 2.7.2
+  mariadb-galera:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 10.5.12
+    created: "2025-10-13T06:28:12.638786438Z"
+    dependencies:
+    - name: common
+      repository: https://raw.githubusercontent.com/bitnami/charts/defb094c658024e4aa8245622dab202874880cbc/bitnami/
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: MariaDB Galera is a multi-master database cluster solution for synchronous
+      replication and high availability.
+    digest: 1a6e768d1a1646a412b53c41fea138e17000c782517b2cb85447c5e48580bb67
+    home: https://github.com/appuio/charts/tree/master/appuio/mariadb-galera
+    icon: https://raw.githubusercontent.com/appuio/charts/master/appuio/mariadb-galera/icon.png
+    keywords:
+    - mariadb
+    - mysql
+    - database
+    - sql
+    - prometheus
+    - galera
+    maintainers:
+    - email: info@appuio.ch
+      name: APPUiO Team
+    name: mariadb-galera
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mariadb-galera
+    - https://github.com/prometheus/mysqld_exporter
+    - https://mariadb.org
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/mariadb-galera-1.2.6/mariadb-galera-1.2.6.tgz
+    version: 1.2.6
+  maxscale:
+  - apiVersion: v1
+    appVersion: 6.4.8
+    created: "2025-10-13T06:28:12.748948589Z"
+    description: MaxScale Helm Chart
+    digest: f504cf13c6ce9fb635022cc955f1f0668d38ad963dd162c2389ead2a632b6bb1
+    home: https://mariadb.com/products/technology/maxscale
+    maintainers:
+    - email: info@appuio.ch
+      name: APPUiO Team
+    name: maxscale
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/maxscale-2.0.1/maxscale-2.0.1.tgz
+    version: 2.0.1
+  metrics-server:
+  - apiVersion: v2
+    appVersion: 0.3.7
+    created: "2025-10-13T06:28:12.883378109Z"
+    description: Metrics Server is a cluster-wide aggregator of resource usage data.
+    digest: d898c600fc02dfdbb18c76f599fdf9ac267ac8e9508c33668f8a590d203a22b5
+    home: https://github.com/kubernetes-incubator/metrics-server
+    keywords:
+    - metrics-server
+    maintainers:
+    - email: info@appuio.ch
+      name: APPUiO Team
+    name: metrics-server
+    sources:
+    - https://github.com/kubernetes-incubator/metrics-server
+    type: application
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/metrics-server-2.12.1/metrics-server-2.12.1.tgz
+    version: 2.12.1
+  openshift-oauth-proxy:
+  - apiVersion: v1
+    appVersion: 1.1.0
+    created: "2025-10-13T06:28:13.04838885Z"
+    description: OpenShift oauth-proxy
+    digest: cd550ea3a2f02d7a38d16140d53c140e60d363d78935acfaf3de80e81ea0819f
+    maintainers:
+    - email: info@appuio.ch
+      name: APPUiO Team
+    name: openshift-oauth-proxy
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/openshift-oauth-proxy-0.2.3/openshift-oauth-proxy-0.2.3.tgz
+    version: 0.2.3
+  openshift-route:
+  - apiVersion: v1
+    appVersion: v1
+    created: "2025-10-13T06:28:13.202006362Z"
+    description: A Helm chart for OpenShift that simply creates a Route object
+    digest: e0034bda2d97decbc1c2fb4460373537171ede3678ee9c91e88d146fde83fa63
+    name: openshift-route
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/openshift-route-1.1.4/openshift-route-1.1.4.tgz
+    version: 1.1.4
+  prometheus-blackbox-exporter:
+  - apiVersion: v1
+    appVersion: v0.17.0
+    created: "2025-10-13T06:28:13.344960081Z"
+    description: Prometheus Blackbox Exporter
+    digest: 411fd24579590401efeeabcbf16fa8868f1fb00a595a3617ad7bb2875a8b74c5
+    home: https://github.com/prometheus/blackbox_exporter
+    keywords:
+    - prometheus
+    - blackbox
+    - monitoring
+    maintainers:
+    - email: info@appuio.ch
+      name: APPUiO Team
+    name: prometheus-blackbox-exporter
+    sources:
+    - https://github.com/prometheus/blackbox_exporter
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/prometheus-blackbox-exporter-0.3.1/prometheus-blackbox-exporter-0.3.1.tgz
+    version: 0.3.1
+  redis:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 6.2.1
+    created: "2025-10-13T06:28:13.497905318Z"
+    dependencies:
+    - name: common
+      repository: https://raw.githubusercontent.com/bitnami/charts/defb094c658024e4aa8245622dab202874880cbc/bitnami/
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: 7f16428d4c4801ef08811fb4b85c740696350cbc5722b0f79e81617fb1dcf35e
+    home: https://github.com/appuio/charts/tree/master/appuio/redis
+    icon: https://github.com/appuio/charts/blob/master/appuio/redis/logo.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: info@appuio.ch
+      name: APPUiO Team
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    - http://redis.io/
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/redis-1.3.7/redis-1.3.7.tgz
+    version: 1.3.7
+  secret:
+  - apiVersion: v2
+    created: "2025-10-13T06:28:13.653616152Z"
+    description: Deploy arbitrary secrets
+    digest: 7842b7e9a4b46d3eb76f50340faa3060cbe20cef1148d989beb0034c39d850aa
+    maintainers:
+    - email: info@appuio.ch
+      name: APPUiO Team
+    name: secret
+    type: application
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/secret-1.1.0/secret-1.1.0.tgz
+    version: 1.1.0
+  signalilo:
+  - apiVersion: v1
+    appVersion: v0.14.0
+    created: "2025-10-13T06:28:13.771701761Z"
+    description: Alertmanager to Icinga2 bridge
+    digest: 0ab0903299697e803004a324abd436014f1257569a081dbcbecc8486b380d632
+    home: https://git.vshn.net/vshn/signalilo
+    keywords:
+    - prometheus
+    - alertmanager
+    - webhook
+    - icinga2
+    maintainers:
+    - email: info@appuio.ch
+      name: APPUiO Team
+    name: signalilo
+    sources:
+    - https://git.vshn.net/vshn/signalilo
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/signalilo-0.12.1/signalilo-0.12.1.tgz
+    version: 0.12.1
+  snappass:
+  - apiVersion: v1
+    appVersion: v1.4.2
+    created: "2025-10-13T06:28:13.949497876Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://raw.githubusercontent.com/bitnami/charts/defb094c658024e4aa8245622dab202874880cbc/bitnami/
+      version: 10.7.4
+    description: A Helm chart for SnapPass
+    digest: 91f686ced3158ef4958e47000d1b1f0fa21d9fa6edefeb705f25dca9baf6ec71
+    home: https://github.com/pinterest/snappass
+    name: snappass
+    sources:
+    - https://github.com/pinterest/snappass
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/snappass-1.0.0/snappass-1.0.0.tgz
+    version: 1.0.0
+  stardog:
+  - apiVersion: v1
+    appVersion: 10.2.2
+    created: "2025-10-13T06:28:14.071123296Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://raw.githubusercontent.com/bitnami/charts/b661ad0e6e3277fc5b5b2db197cba47174693712/bitnami/
+      version: 9.2.7
+    description: Stardog is the world’s leading knowledge graph platform for the enterprise.
+      Stardog makes it fast and easy to turn enterprise data into knowledge.
+    digest: 0e7c3dcf1b259dd1b70ff9756f3956bedac0c20c6642f1869efdb17c1e2c0c8c
+    home: https://www.stardog.com/
+    icon: https://d33wubrfki0l68.cloudfront.net/img/c920235ff153186ab17617ce2bce193d867fa80c/stardog-logo.png
+    maintainers:
+    - email: info@appuio.ch
+      name: APPUiO Team
+    name: stardog
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/stardog-0.26.5/stardog-0.26.5.tgz
+    version: 0.26.5
+  stardog-userrole-operator:
+  - apiVersion: v1
+    appVersion: 0.3.0
+    created: "2025-10-13T06:28:14.205557605Z"
+    description: Stardog User and Role Operator
+    digest: 3ed11c49ebdba6252a64b2d32174a54b5b782325c6269f7c991b1b3c1289b851
+    keywords:
+    - stardog
+    - operator
+    - appuio
+    - user
+    - role
+    maintainers:
+    - email: info@appuio.ch
+      name: APPUiO Team
+    name: stardog-userrole-operator
+    sources:
+    - https://github.com/vshn/stardog-userrole-operator
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/stardog-userrole-operator-0.3.0/stardog-userrole-operator-0.3.0.tgz
+    version: 0.3.0
+  trifid:
+  - apiVersion: v1
+    appVersion: 2.3.7
+    created: "2025-10-13T06:28:14.366225253Z"
+    description: Trifid provides a lightweight and easy way to access Linked Data
+      URIs via HTTP.
+    digest: a39fd6b3280bff940b84ab04bc07f71877914beea69d39cdcf673ff8d9dbfdac
+    home: https://github.com/zazuko/trifid
+    name: trifid
+    sources:
+    - https://github.com/zazuko/trifid
+    urls:
+    - https://github.com/BacLuc/appuio-charts/releases/download/trifid-2.0.2/trifid-2.0.2.tgz
+    version: 2.0.2
+generated: "2025-10-13T06:28:14.366233974Z"
